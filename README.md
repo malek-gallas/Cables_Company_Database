@@ -1,6 +1,6 @@
 # Cables_Company_Database
 
-This repository contains an Oracle database script<br/>that creates a new PDB and sets up tables, users, and privileges for managing human resources of a cables company.
+- This repository contains an Oracle database script<br/>that creates a new PDB and sets up tables, users, and privileges<br/>for managing human resources of a cables company.
 
 ## Prerequisites
 
@@ -24,4 +24,4 @@ This repository contains an Oracle database script<br/>that creates a new PDB an
 
 ## License
 - This project is licensed under the MIT License.
-- Feel free to modify the scripts according to your requirements and include any additional details that you think are relevant.
+- Feel free to modify the scripts according to your requirements<br/>and include any additional details that you think are relevant.
