@@ -42,7 +42,7 @@ TO hr_admin;
 GRANT CREATE SESSION TO hr_assistant;
 GRANT INSERT, UPDATE, DELETE, SELECT ON hr.employees TO hr_assistant;
 GRANT INSERT, UPDATE, DELETE, SELECT ON hr.departments TO hr_assistant;
-GRANT INSERT, UPDATE, DELETE, SELECT ON hr.hr.projects TO hr_assistant;
+GRANT INSERT, UPDATE, DELETE, SELECT ON hr.projects TO hr_assistant;
 GRANT INSERT, UPDATE, DELETE, SELECT ON hr.assignments TO hr_assistant;
 GRANT SELECT ON hr.seq1 TO hr_assistant;
 
