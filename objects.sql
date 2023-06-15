@@ -28,7 +28,7 @@ CREATE TABLE hr.assignments (
     project_code VARCHAR2(8),
     employee_id NUMBER(5),
     CONSTRAINT pk_assignments PRIMARY KEY (project_code, employee_id),
-    CONSTRAINT fk_assignments_projects FOREIGN KEY (project_code) REFERENCES hr.hr.projects(project_code),
+    CONSTRAINT fk_assignments_projects FOREIGN KEY (project_code) REFERENCES hr.projects(project_code),
     CONSTRAINT fk_assignments_employees FOREIGN KEY (employee_id) REFERENCES hr.employees(employee_id)
 );
 
