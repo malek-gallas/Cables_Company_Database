@@ -18,7 +18,7 @@ CREATE TABLE hr.departments (
 );
 
 -- Create the "hr.projects" table
-CREATE TABLE hr.hr.projects (
+CREATE TABLE hr.projects (
     project_code VARCHAR2(8) CONSTRAINT pk_projects PRIMARY KEY,
     project_name VARCHAR2(32) NOT NULL
 );
