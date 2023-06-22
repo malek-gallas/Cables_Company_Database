@@ -18,7 +18,7 @@
 - Run: @PATH_TO_REPOSITORY_FOLDER\run.sql
 
 ## Usage
-- You can use this script to set up and manage the cables database. 
+- You can use this script to set up and manage database. 
 - Follow the instructions provided in the sections above to create the necessary PDB, tables, and users. 
 - Modify the script as per your requirements, such as adding more sample data or altering the table structure.
 
