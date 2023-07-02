@@ -19,3 +19,6 @@ TEMPORARY TABLESPACE hr_temp;
 
 -- Grant roles to users
 GRANT hr_assistant to frank;
+
+-- Commit the changes
+Commit;

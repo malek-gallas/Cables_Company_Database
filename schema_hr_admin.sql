@@ -33,7 +33,7 @@ GRANT
     CREATE ANY SEQUENCE,
     SELECT ANY TABLE,
     SELECT ANY SEQUENCE,
-    ALTER ANY TABLE;
+    ALTER ANY TABLE,
     ALTER ANY SEQUENCE
 TO hr_admin;
 
@@ -45,3 +45,6 @@ TEMPORARY TABLESPACE hr_temp;
 
 -- Grant roles to users
 GRANT hr_admin to nina;
+
+-- Commit the changes
+Commit;
