@@ -1,6 +1,6 @@
 # Cables_Company_Database
 
-- This repository contains an Oracle database script<br/>that creates a new PDB and sets up tables, users, and privileges<br/>for managing human resources of a cables company.
+- This repository contains an Oracle database script<br/>that creates a new PDB and sets up tables, users, and privileges<br/>for managing human resources of a car cables production plant.
 
 ## Prerequisites
 
@@ -16,11 +16,6 @@
 - Open your command terminal.
 - Run: SQLPLUS / AS SYSDBA;
 - Run: @PATH_TO_REPOSITORY_FOLDER\run.sql
-
-## Usage
-- You can use this script to set up and manage database. 
-- Follow the instructions provided in the sections above to create the necessary PDB, tables, and users. 
-- Modify the script as per your requirements, such as adding more sample data or altering the table structure.
 
 ## License
 - This project is licensed under the MIT License.
