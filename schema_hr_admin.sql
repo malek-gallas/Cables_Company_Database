@@ -20,11 +20,10 @@ CREATE USER hr IDENTIFIED BY 123456789
     QUOTA UNLIMITED ON hr
     TEMPORARY TABLESPACE hr_temp;
 
--- Create new roles
+-- Create new role
 CREATE ROLE hr_admin;
-CREATE ROLE hr_assistant;
 
--- Grant privileges roles
+-- Grant privileges role
 GRANT 
     CREATE SESSION, 
     CREATE ANY TABLE,
@@ -38,25 +37,11 @@ GRANT
     ALTER ANY SEQUENCE
 TO hr_admin;
 
-
-GRANT CREATE SESSION TO hr_assistant;
-GRANT INSERT, UPDATE, DELETE, SELECT ON hr.employees TO hr_assistant;
-GRANT INSERT, UPDATE, DELETE, SELECT ON hr.departments TO hr_assistant;
-GRANT INSERT, UPDATE, DELETE, SELECT ON hr.projects TO hr_assistant;
-GRANT INSERT, UPDATE, DELETE, SELECT ON hr.assignments TO hr_assistant;
-GRANT SELECT ON hr.seq1 TO hr_assistant;
-
--- Create new users
+-- Create new user
 CREATE USER nina IDENTIFIED BY 123456789
 DEFAULT TABLESPACE hr
 QUOTA UNLIMITED ON hr
 TEMPORARY TABLESPACE hr_temp;
 
-CREATE USER frank IDENTIFIED BY 123456789
-DEFAULT TABLESPACE hr
-QUOTA 100M ON hr
-TEMPORARY TABLESPACE hr_temp;
-
 -- Grant roles to users
 GRANT hr_admin to nina;
-GRANT hr_assistant to frank;
